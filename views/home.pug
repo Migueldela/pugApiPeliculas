@@ -1,14 +1,6 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body 
-
-        h1 busca tu pelicula!
-        form#formulario(action="/film" method="post" )
-            input( type="text") 
-            input(type="submit")
+include ./header
+h1 Busca tu película!
+form#formulario(action="/film" method="post" )
+    input(name="title" type="text" value="indiana jones")
+    input(type="submit")
         
