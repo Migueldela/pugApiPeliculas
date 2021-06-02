@@ -5,7 +5,13 @@ const peli = {
         let response = await fetch(url)
         let film = await response.json()
         return film
+    },
+    /* postPelicula: async(url) => {
+        let response = await fetch(url)
+        let film = await response.json()
+        return film
     }
+ */
 }
 
 module.exports = peli
