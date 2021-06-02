@@ -1,0 +1,24 @@
+include ./header
+
+button
+    a(href="/") Home
+if Response == "True"
+    h1 #{Title} 
+    div.content
+        img(src=Poster, alt="portada")
+        div.description
+            p 
+                strong Fecha de estreno: 
+            p #{Released}
+            p 
+                strong Director: 
+            p #{Director}
+            p 
+                strong Puntuación imdb: 
+            p #{imdbRating}
+            p 
+                strong Descripción: 
+            p #{Plot}
+else
+    p El título introducido no existe
+        
