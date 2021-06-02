@@ -1,7 +1,5 @@
 const films = require('../utils/films');
-const apiKey = require('../config') //Mirar en el git ignore para la api
-
-
+const apiKey = require ("../config")
 const routes = {
     home: (req, res) => {
         res.status(200).render('home')
