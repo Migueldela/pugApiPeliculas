@@ -1,5 +1,7 @@
 const films = require('../utils/films');
-const apiKey = require ("../config")
+require('dotenv').config();
+let apiKey = process.env.API_KEY
+
 const routes = {
     home: (req, res) => {
         res.status(200).render('home')
@@ -12,9 +14,7 @@ const routes = {
     post: async(req, res) => {
         let title = req.body.title
         res.status(200).redirect(`film/${title}`);
-    },
-    
-  
+    }
 }
 
 module.exports = routes
