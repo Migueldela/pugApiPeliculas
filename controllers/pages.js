@@ -1,5 +1,6 @@
 const films = require('../utils/films');
-const apiKey ="&apikey=7c94ffd3"
+const apiKey = require('../config') //Mirar en el git ignore para la api
+
 
 const routes = {
     home: (req, res) => {
