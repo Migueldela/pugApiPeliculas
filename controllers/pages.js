@@ -1,5 +1,5 @@
 const films = require('../utils/films');
-const apiKey = require('../config')
+const apiKey ="&apikey=7c94ffd3"
 
 const routes = {
     home: (req, res) => {
@@ -14,9 +14,7 @@ const routes = {
         let title = req.body.title
         res.status(200).redirect(`film/${title}`);
     },
-    page404: (req, res) => {
-        res.status(200).render('404')
-    },
+  
 }
 
 module.exports = routes
