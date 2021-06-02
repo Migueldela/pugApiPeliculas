@@ -13,6 +13,7 @@ const routes = {
         let title = req.body.title
         res.status(200).redirect(`film/${title}`);
     },
+    
   
 }
 
