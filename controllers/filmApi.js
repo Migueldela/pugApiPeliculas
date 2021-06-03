@@ -1,6 +1,6 @@
 const films = require("../utils/films")
 require('dotenv').config();
-let apiKey = process.env.API_KEY
+let apiKey = process.env.API_KEY || "&apikey=f736ee74"
 
 const routers = {
     getfilm: async(req, res) => {
