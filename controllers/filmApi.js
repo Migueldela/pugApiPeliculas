@@ -10,7 +10,7 @@ const routers = {
         let data = await films.getPelicula(`http://www.omdbapi.com/?t=${title}${apiKey}`)
         console.log(data)
         if (data.Response == "False") {
-            res.status(500).json({ error: 500, message: `Película no encontrada` })
+            res.status(500).json({ error: 500, message: `Película no encontrada ${apiKey}` })
         } else {
             res.status(200).json(data)
         }

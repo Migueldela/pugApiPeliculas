@@ -4,7 +4,6 @@ const routerApi = require("./controllers/apis")
 const app = express()
 const port = process.env.PORT || 3000
 
-
 app.set('view engine', 'pug');
 app.set('views', './views');
 
@@ -17,5 +16,5 @@ app.use('/api', routerApi)
 app.use("/", router);
 
 app.listen(port, () => {
-    console.log(`http://localhost:${port}`)
+    console.log(`Listening http://localhost:${port}`)
 });
