@@ -5,10 +5,8 @@ let apiKey = process.env.API_KEY
 const routers = {
     getfilm: async(req, res) => {
         let title = req.params.title
-        console.log(`http://www.omdbapi.com/?t=${title}&apikey=${apiKey}`)
 
         let data = await films.getPelicula(`http://www.omdbapi.com/?t=${title}&apikey=${apiKey}`)
-        console.log(data)
         if (data.Response == "False") {
             res.status(500).json({ error: 500, message: `Película no encontrada ${apiKey}` })
         } else {
