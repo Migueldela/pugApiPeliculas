@@ -13,7 +13,6 @@ const routes = {
     },
     post: (req, res) => {
         let title = req.body.title
-        console.log(req)
         res.status(200).redirect(`film/${title}`);
     }
 }
