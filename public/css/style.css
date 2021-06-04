@@ -1,54 +1,23 @@
 body {
+    background-color: rgb(177, 167, 167);
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    color: #ddd;
-    background-color: #252525;
 }
 
-button {
-    width: 100%;
-    margin-top: 10px;
-    padding: 15px;
-    background-color: #111;
-    border: 1px solid #981212;
-    border-radius: 7px;
-}
-
-a {
-    text-decoration: none;
-    width: 100%;
-    display: block;
-    font-size: 1.5em;
-    color: #ddd;
-}
-
-form#formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-}
-
-input {
-    padding: 10px;
+h1 {
     text-align: center;
-    margin-bottom: 5px;
-    width: 100%;
 }
 
-input[type="submit"] {
-    background-color: #981212;
-    border: unset;
-    width: 90%;
-    color: #ddd;
+#formulario {
+    display: flex;
+    justify-content: center;
 }
 
 .content {
     display: flex;
-    width: 100%;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 img {
@@ -57,18 +26,18 @@ img {
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    padding: 0 1em;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
 }
 
-p {
-    margin-top: 0;
+button {
+    width: 20%;
+    margin-left: 41%;
+    border: 3px solid whitesmoke;
+    border-radius: 5px
 }
 
-strong {
-    margin-top: 15px;
-    display: block;
+button a {
+    text-decoration: none;
 }
